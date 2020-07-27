@@ -1,0 +1,63 @@
+body{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+   margin: 0px;
+}
+
+div{
+    //background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    width: 100%;
+    height: 800px;
+} 
+
+.container{
+    width: 25%;
+    height: 450px;
+    margin: 100px 33%;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    border-style: ridge;
+    /* position: relative; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    min-width: 225.25px;
+    max-width: 300px;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+
+.display{
+    overflow: hidden;
+    margin: 0.8%;
+    background-color: aliceblue;
+    height: 14%;
+    width: 97%; 
+    border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    font-size: 20px;
+    max-width: 100%;
+    border-style: hidden;
+}
+
+.keys{
+    display: flex;
+    flex-wrap: wrap; 
+    height: 85%;
+    margin:0.2%;
+    /* overflow: hidden; */
+}
+
+.btn{
+    flex-basis:20%;
+     height: 18.5%; 
+     flex-flow: column;
+     /* margin:0.1%; */
+    /* align-items: stretch; */
+    background-color: aliceblue;
+    
+    /* align-self:flex-start; */
+}
