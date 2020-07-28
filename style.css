@@ -1,24 +1,33 @@
+html,
 body{
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-   margin: 0px;
-}
-
-div{
     /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
-    width: 100%;
-    height: 800px;
+    margin: 0px;
+    height: 100%;  
+    animation: pulse 5s infinite;  
+}
+  
+@keyframes pulse{
+    0% {
+      background-color: #001F3F;
+    }
+    50%{
+        background-color: darkslateblue;
+    }
+    100% {
+      background-color: darkslategray;
+    }
 } 
 
 .container{
     width: 25%;
-    height: 450px;
+    height: 500px;
     margin: 100px 33%;
     background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
     border-style: ridge;
     /* position: relative; */
     /* display: flex;
     flex-wrap: wrap; */
-    min-width: 225.25px;
+    min-width: 300.25px;
     max-width: 300px;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
@@ -29,9 +38,9 @@ div{
 
 .display{
     overflow: hidden;
-    margin: 0.8%;
+    margin: 3px 0.8%;
     background-color: aliceblue;
-    height: 14%;
+    height: 18%;
     width: 97%; 
     border-radius: 0.2em;
     -webkit-border-radius: 0.2em;
@@ -45,19 +54,33 @@ div{
 
 .keys{
     display: flex;
-    flex-wrap: wrap; 
-    height: 85%;
-    margin:0.2%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 80%;
+
+    margin: 5px 0.1em;
+    padding: 0px;
+    flex-basis:fill;
     /* overflow: hidden; */
 }
 
 .btn{
-    flex-basis:20%;
-     height: 18.5%; 
-     flex-flow: column;
-     /* margin:0.1%; */
-    /* align-items: stretch; */
-    background-color: aliceblue;
     
-    /* align-self:flex-start; */
+    border-radius: 0.2em;
+    height: 15%;
+    width: 70px;
+    background-color: aliceblue;
+    list-style: none;
+    /*margin:0.2px;
+    *//*border: ;
+    border-style: ;
+    */
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    padding: 0.2px;
+    text-align: center;
+    font: small-caps bold 24px/1 sans-serif;
 }
