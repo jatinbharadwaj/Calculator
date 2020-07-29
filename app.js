@@ -28,15 +28,19 @@ window.onload=function(){
                 val = val.replace(/cos/g,"Math.cos");
                 val = val.replace(/sin/g,"Math.sin");
                 val = val.replace(/√/g,"Math.sqrt");
-                 console.log(val);
+                console.log(val);
+            
                 inp.value = eval(val);
                 text = "";
                 val=inp.value;
                 animText=val;
+            
             }
             else{
                 val+=text;
                 inp.value = val;
+              
+               
             }
             animate(animText);
         });
